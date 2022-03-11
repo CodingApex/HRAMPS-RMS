@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DASHBOARD</title>
+</head>
+<style>
+#tb1 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  center
+}
+
+#tb1 td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align:center;
+}
+#tb1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #FF8C00;
+  color: white;
+  text-align:center;
+}
+#tb2 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  center
+}
+
+#tb2 td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align:center;
+}
+#tb2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #6495ED;
+  color: white;
+  text-align:center;
+}
+</style>
+<body>
+<table id="tb1" align="center">
+    <tr>
+        <th>Total number of Employees</th>
+        <th>Permanent Staff</th>
+        <th>Casual Staff</th>
+        <th>Permanent Faculty</th>
+        <th>Casual Faculty</th>
+    </tr>
+        <td>{{all_employees}}</td>
+        <td>{{all_permanent_staff}}</td>
+        <td>{{all_casual_staff}}</td>
+        <td>{{all_permanent_faculty}}</td>
+        <td>{{all_casual_faculty}}</td>
+    </tr>
+</table>
+<br>
+<table id="tb2" align="center">
+    <tr>
+        <th>Muslim Employees</th>
+        <th>Non-Muslim Employees</th>
+        <th>Muslim Permanent Employees</th>
+        <th>Non-Muslim Permanent Employees</th>
+        <th>Muslim Casual Employees</th>
+        <th>Non-Muslim Casual Employees</th>
+    </tr>
+        <td>{{all_muslim_employees}}</td>
+        <td>{{all_non_muslim_employees}}</td>
+        <td>{{all_muslim_permanent}}</td>
+        <td>{{all_non_muslim_permanent}}</td>
+        <td>{{all_muslim_casual}}</td>
+        <td>{{all_non_muslim_casual}}</td>
+    </tr>
+</table>
+</body>
+</html>
