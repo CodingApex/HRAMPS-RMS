@@ -8,7 +8,7 @@
 #tb1 {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 50%;
+  width: 80%;
   center
 }
 
@@ -28,7 +28,7 @@
 #tb2 {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 50%;
+  width: 80%;
   center
 }
 
@@ -42,6 +42,25 @@
   padding-bottom: 12px;
   text-align: left;
   background-color: #6495ED;
+  color: white;
+  text-align:center;
+}
+#tb3 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  center
+}
+#tb3 td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align:center;
+}
+#tb3 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #B22222;
   color: white;
   text-align:center;
 }
@@ -62,7 +81,6 @@
         <td>{{all_casual_faculty}}</td>
     </tr>
 </table>
-## added br tag
 <br>
 <table id="tb2" align="center">
     <tr>
@@ -79,6 +97,73 @@
         <td>{{all_non_muslim_permanent}}</td>
         <td>{{all_muslim_casual}}</td>
         <td>{{all_non_muslim_casual}}</td>
+    </tr>
+</table>
+<br>
+<table id="tb3" align="center">
+    <tr>
+        <th>FAYE Employees</th>
+        <th>JOMARI Employees</th>
+        <th>PALOR Employees</th>
+        <th>GRACE Employees</th>
+    </tr>
+        <td>{{faye_employees}}</td>
+        <td>{{jomari_employees}}</td>
+        <td>{{palor_employees}}</td>
+        <td>{{grace_employees}}</td>
+    </tr>
+</table>
+<br>
+<table id="tb4" border=1 align="center">
+    <tr>
+        <th colspan="2">FAYE</th>
+    </tr>
+    <tr>
+        <th>Permanent Employee</th>
+        <th>Casual Employee</th>
+    </tr>
+    <tr>
+        <td>{{faye_oc_perma_staff}}</td>
+        <td>{{faye_oc_cas_staff}}</td>
+    </tr>
+</table>
+<table id="tb5" border=1 align="center">
+    <tr>
+        <th colspan="2">JOMARI</th>
+    </tr>
+    <tr>
+        <th>Permanent Employee</th>
+        <th>Casual Employee</th>
+    </tr>
+    <tr>
+        <td>{{jomari_perma_emp}}</td>
+        <td>{{jomari_cas_emp}}</td>
+    </tr>
+</table>
+<table id="tb6" border=1 align="center">
+    <tr>
+        <th colspan="2">PALOR</th>
+    </tr>
+    <tr>
+        <th>Permanent Employee</th>
+        <th>Casual Employee</th>
+    </tr>
+    <tr>
+        <td>{{palor_perma_emp}}</td>
+        <td>{{palor_cas_emp}}</td>
+    </tr>
+</table>
+<table id="tb7" border=1 align="center">
+    <tr>
+        <th colspan="2">GRACE</th>
+    </tr>
+    <tr>
+        <th>Permanent Employee</th>
+        <th>Casual Employee</th>
+    </tr>
+    <tr>
+        <td>{{grace_perma_emp}}</td>
+        <td>{{grace_cas_emp}}</td>
     </tr>
 </table>
 </body>
