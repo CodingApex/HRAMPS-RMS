@@ -1,2 +1,2 @@
 # HRAMPS-RMS
-Reporting Tool for MSU - HRMO
+Dashboard for MSU - HRMO
